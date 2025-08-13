@@ -9,3 +9,8 @@ ratelimiter:
       keyType: USER
       limit: 5
       duration: 11
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
