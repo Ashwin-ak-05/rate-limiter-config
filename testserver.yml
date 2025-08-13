@@ -7,10 +7,5 @@ ratelimiter:
   apis:
     test-api:
       keyType: USER
-      limit: 5
+      limit: 1
       duration: 11
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
