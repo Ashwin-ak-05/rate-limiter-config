@@ -8,4 +8,4 @@ ratelimiter:
     test-api:
       keyType: USER
       limit: 1
-      duration: 10
+      duration: 11
