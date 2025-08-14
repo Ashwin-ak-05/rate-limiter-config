@@ -5,8 +5,13 @@ ratelimiter:
     keyType: USER
 
   apis:
-    test-api:
-      strategy : FIXED_WINDOW
+    global-api:
+      strategy: TOKEN_BUCKET
       keyType: USER
       limit: 5
+      duration: 10
+    test-api:
+      strategy: FIXED_WINDOW
+      keyType: USER
+      limit: 1
       duration: 10
