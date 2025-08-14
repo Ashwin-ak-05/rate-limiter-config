@@ -1,11 +1,12 @@
 ratelimiter:
   global:
     limit: 200
-    duration: 1
+    duration: 1m
     keyType: USER
 
   apis:
     test-api:
+      strategy : FIXED_WINDOW
       keyType: USER
-      limit: 11
-      duration: 30
+      limit: 5
+      duration: 10
