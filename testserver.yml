@@ -14,4 +14,5 @@ ratelimiter:
       strategy: TOKEN_BUCKET
       keyType: USER
       limit: 4
+      burstlimit: 3
       duration: 10
