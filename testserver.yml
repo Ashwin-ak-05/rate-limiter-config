@@ -13,6 +13,6 @@ ratelimiter:
     test-api:
       strategy: SLIDING_WINDOW
       keyType: USER
-      limit: 4
+      limit: 0
       burstlimit: 3
       duration: 10
