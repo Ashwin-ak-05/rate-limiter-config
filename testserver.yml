@@ -13,6 +13,6 @@ ratelimiter:
     test-api:
       strategy: TOKEN_BUCKET
       keyType: USER
-      limit: 0
+      limit: 1
       burstlimit: 3
       duration: 10
