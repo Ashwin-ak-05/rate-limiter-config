@@ -11,7 +11,7 @@ ratelimiter:
       limit: 5
       duration: 10
     test-api:
-      strategy: TOKEN_BUCKET
+      strategy: FIXED_WINDOW
       keyType: USER
       limit: 4
       burstlimit: 3
